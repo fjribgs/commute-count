@@ -1,24 +1,31 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { betterFetch } from "@better-fetch/fetch";
+import { NextResponse, type NextRequest } from "next/server";
+import type { Session } from "@/server/better-auth/config";
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const sessionToken = request.cookies.get('session_token')?.value;
+  const { data: session } = await betterFetch<Session>(
+    "/api/auth/get-session",
+    {
+      baseURL: request.nextUrl.origin,
+      headers: {
+        cookie: request.headers.get("cookie") ?? "",
+      },
+    }
+  );
 
-  if (pathname === '/' && !sessionToken) {
-    const loginUrl = new URL('/login', request.url);
-    return NextResponse.redirect(loginUrl);
+  if (!session && pathname !== "/login") {
+    return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  if (pathname === '/login' && sessionToken) {
-    const homeUrl = new URL('/', request.url);
-    return NextResponse.redirect(homeUrl);
+  if (session && pathname === "/login") {
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/', '/login'],
+  matcher: ["/", "/login"],
 };
