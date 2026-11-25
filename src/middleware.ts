@@ -16,7 +16,9 @@ export async function middleware(request: NextRequest) {
   );
 
   if (!session && pathname !== "/login") {
-    return NextResponse.redirect(new URL("/login", request.url));
+    const loginUrl = new URL("/login", request.url);
+    loginUrl.searchParams.set("callbackUrl", pathname);
+    return NextResponse.redirect(loginUrl);
   }
 
   if (session && pathname === "/login") {
@@ -27,5 +29,11 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/login"],
+  matcher: [
+    "/",
+    "/login",
+    "/vehicles/:path*",
+    "/statistical/:path*",
+    "/logs/:path*",
+  ],
 };
