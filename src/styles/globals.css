@@ -4,9 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* @theme {
+@theme {
   --font-inter: "Inter", sans-serif;
-} */
+  --color-orange-sm: #FFF5E5;
+  --color-orange-md: #FFD38A;
+  --color-orange-lg: #FFA001;
+  --color-orange-xl: #995700;
+  --color-orange-2xl: #0F172A;
+}
 
 @theme inline {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif,

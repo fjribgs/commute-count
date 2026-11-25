@@ -1,10 +1,17 @@
-import TestSection from "@/app/_components/vehicles/test";
+import PageBreadcrumb from "@/components/page-breadcrumb";
 
 export default function VehiclesPage() {
   return (
     <div>
+      <PageBreadcrumb
+        items={[
+          {
+            title: "Routes & Vehicles",
+            href: "/vehicles",
+          }
+        ]}
+      />
       route and vehicle page
-      <TestSection />
     </div>
   )
 }
