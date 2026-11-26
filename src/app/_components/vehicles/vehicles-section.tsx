@@ -40,16 +40,16 @@ export default function VehiclesSection() {
       <div className="flex items-center justify-between">
         <div className="flex items-baseline gap-3">
           <h2 className="text-orange-2xl text-lg font-semibold tracking-tight">
-            My Vehicles
+            Motor Gw
           </h2>
           <span className="text-xs text-slate-400">
-            {VEHICLES_DATA.length} saved vehicles
+            {VEHICLES_DATA.length} kendaraan tersimpan
           </span>
         </div>
 
         <Button className="bg-orange-lg hover:bg-orange-lg/90 text-orange-2xl cursor-pointer rounded-lg px-4 font-semibold shadow-none">
           <Plus className="mr-1.5 size-4" />
-          Add Vehicle
+          Tambah Kendaraan
         </Button>
       </div>
 
@@ -72,13 +72,13 @@ export default function VehiclesSection() {
                   <h3 className="text-orange-2xl text-base font-semibold">
                     {vehicle.name}
                   </h3>
-                  <p className="text-xs text-slate-400">{vehicle.subtitle}</p>
+                  <p className="text-xs text-slate-400">{vehicle.subtitle === "Daily ride" ? "Motor harian" : vehicle.subtitle === "Weekend ride" ? "Motor weekend" : vehicle.subtitle}</p>
                 </div>
               </div>
 
               {vehicle.isDefault ? (
                 <span className="bg-orange-sm text-orange-xl rounded-full px-3 py-1 text-xs font-medium">
-                  Default
+                  Utama
                 </span>
               ) : (
                 <button
@@ -96,7 +96,7 @@ export default function VehiclesSection() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <p className="text-[11px] font-medium tracking-wider text-slate-400 uppercase">
-                  EFFICIENCY
+                  EFISIENSI
                 </p>
                 <p className="text-orange-2xl mt-1 font-mono text-base font-semibold">
                   {vehicle.efficiency}
@@ -105,7 +105,7 @@ export default function VehiclesSection() {
 
               <div>
                 <p className="text-[11px] font-medium tracking-wider text-slate-400 uppercase">
-                  FUEL TYPE
+                  JENIS BBM
                 </p>
                 <div className="mt-1 flex items-baseline justify-between gap-2">
                   <span className="text-orange-2xl text-sm font-medium">
@@ -126,10 +126,10 @@ export default function VehiclesSection() {
         >
           <Plus className="mb-2 size-6 text-slate-400" />
           <span className="text-orange-2xl text-sm font-semibold">
-            Add New Vehicle
+            Tambah Kendaraan Baru
           </span>
           <span className="mt-1 text-xs text-slate-400">
-            Compare a different ride.
+            Bandingin sama motor lain.
           </span>
         </button>
       </div>

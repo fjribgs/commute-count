@@ -53,16 +53,16 @@ export default function LoginIndex() {
 
         <div className="w-full max-w-95 mx-auto my-12 lg:my-0">
           <p className="text-xs font-bold tracking-[0.08em] uppercase text-amber-600 mb-3">
-            SMARTER COMMUTES. CLEARER NUMBERS.
+            KOMUTER LEBIH CERDAS. ANGKA LEBIH JELAS.
           </p>
           <h1 className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-3.5">
-            Welcome to
+            Selamat datang di
             <br />
             CommuteCount
           </h1>
           <p className="text-sm lg:text-base text-slate-500 leading-relaxed mb-8">
-            Predict your monthly fuel expenses with statistical precision and
-            Monte Carlo simulation.
+            Prediksi pengeluaran BBM bulanan lo dengan presisi statistik dan
+            simulasi Monte Carlo.
           </p>
 
           <Button
@@ -75,25 +75,25 @@ export default function LoginIndex() {
             {loading ? (
               <>
                 <Loader2 className="mr-2.5 h-4 w-4 animate-spin text-slate-500" />
-                Connecting to Google...
+                Menghubungkan ke Google...
               </>
             ) : (
               <>
                 <GoogleIcon className="mr-3 h-4 w-4" />
-                Continue with Google
+                Lanjutkan dengan Google
               </>
             )}
           </Button>
 
           <p className="mt-4 text-xs text-slate-400">
-            Secure authentication powered by Google OAuth.
+            Login aman pakai Google OAuth.
           </p>
         </div>
 
         {/* footer */}
         <div className="flex items-center justify-between text-xs text-slate-400">
           <span>© 2026 CommuteCount</span>
-          <span>Built for the everyday journey.</span>
+          <span>Dibuat buat perjalanan harian lo.</span>
         </div>
       </div>
 
@@ -112,25 +112,25 @@ export default function LoginIndex() {
 
         <div className="relative z-10 w-full max-w-120">
           <p className="text-xs font-bold tracking-[0.08em] uppercase text-amber-600 mb-3">
-            LESS GUESSWORK. MORE CONFIDENCE.
+            KURANG NEBAK-NEBAK. LEBIH YAKIN.
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-3">
-            Your commute,
+            Komuter lo,
             <br />
-            with the odds in your favor.
+            dengan peluang di pihak lo.
           </h2>
           <p className="text-base text-slate-500 mb-8">
-            Plan around uncertainty. Not just an average.
+            Rencanain di tengah ketidakpastian. Bukan cuma rata-rata.
           </p>
 
           <div className="relative pb-8">
             <div className="bg-white rounded-2xl border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6">
               <div className="flex items-center justify-between mb-1.5">
                 <span className="text-[10px] font-semibold tracking-wider uppercase text-slate-400">
-                  MONTHLY FUEL FORECAST
+                  PREDIKSI BBM BULANAN
                 </span>
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-700 border border-amber-200/60">
-                  5,000 simulations
+                  5.000 simulasi
                 </span>
               </div>
               <h3 className="text-base font-semibold text-slate-900 mb-6">
@@ -230,7 +230,7 @@ export default function LoginIndex() {
               <div className="w-1 h-9 rounded-full bg-amber-500 shrink-0" />
               <div>
                 <p className="text-[11px] text-slate-400 font-medium mb-0.5">
-                  95% Confidence Interval
+                  95% Interval Kepercayaan
                 </p>
                 <p className="font-mono text-sm sm:text-base font-bold tracking-tight text-slate-900">
                   Rp 245.000 - Rp 335.000
@@ -240,7 +240,7 @@ export default function LoginIndex() {
           </div>
 
           <p className="text-xs text-slate-400 pl-4 mt-1">
-            Powered by probability. Grounded in your daily routine.
+            Ditenagai probabilitas. Berbasis rutinitas harian lo.
           </p>
         </div>
       </div>

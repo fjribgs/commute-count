@@ -44,7 +44,7 @@ export default function RoutesSection() {
     <section className="space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-orange-2xl text-lg font-semibold tracking-tight">
-          Saved Commute Routes
+          Rute Komuter Tersimpan
         </h2>
 
         <Button
@@ -52,7 +52,7 @@ export default function RoutesSection() {
           className="text-orange-2xl cursor-pointer rounded-lg border-slate-200 bg-white px-4 font-medium shadow-none hover:bg-slate-50"
         >
           <Plus className="mr-1.5 size-4" />
-          Add Route
+          Tambah Rute
         </Button>
       </div>
 
@@ -61,10 +61,10 @@ export default function RoutesSection() {
           <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-slate-100 text-xs font-medium text-slate-400">
-                <th className="px-6 py-4 font-medium">Route Name</th>
-                <th className="px-6 py-4 font-medium">Round-trip Distance</th>
-                <th className="px-6 py-4 font-medium">Avg Traffic</th>
-                <th className="px-6 py-4 font-medium">Std Deviation</th>
+                <th className="px-6 py-4 font-medium">Nama Rute</th>
+                <th className="px-6 py-4 font-medium">Jarak PP</th>
+                <th className="px-6 py-4 font-medium">Rata-rata Macet</th>
+                <th className="px-6 py-4 font-medium">Std Deviasi</th>
                 <th className="px-6 py-4 font-medium">Status</th>
                 <th className="w-12 px-6 py-4"></th>
               </tr>
@@ -95,11 +95,11 @@ export default function RoutesSection() {
                     <td className="px-6 py-4">
                       {isActive ? (
                         <span className="bg-orange-sm text-orange-xl inline-flex items-center rounded-full px-3 py-1 text-xs font-medium">
-                          Active
+                          Aktif
                         </span>
                       ) : (
                         <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">
-                          Saved
+                          Tersimpan
                         </span>
                       )}
                     </td>
