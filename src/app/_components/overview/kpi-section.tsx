@@ -81,7 +81,7 @@ export default function KPISection({ result }: Props) {
             </div>
           </div>
           <div className="pt-4 text-xs font-medium text-slate-500">
-            Terbaik sampai Terburuk
+            Kemungkinan Pengeluaran Terbaik sampai Terburuk
           </div>
         </div>
 
