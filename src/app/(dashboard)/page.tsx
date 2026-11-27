@@ -17,22 +17,12 @@ export default async function HomePage() {
   }
 
   return (
-    // <main>
-    //   <PageBreadcrumb
-    //     items={[
-    //       {
-    //         title: "Overview & Simulator",
-    //         href: "/",
-    //       },
-    //     ]}
-    //   />
-    // </main>
     <div className="space-y-4">
       <PageBreadcrumb
         items={[
           {
-            title: "Routes & Vehicles",
-            href: "/vehicles",
+            title: "Overview & Simulator",
+            href: "/",
           }
         ]}
       />

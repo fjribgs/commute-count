@@ -37,7 +37,7 @@ const VEHICLES_DATA: Vehicle[] = [
 export default function VehiclesSection() {
   return (
     <section className="space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between h-10">
         <div className="flex items-baseline gap-3">
           <h2 className="text-orange-2xl text-lg font-semibold tracking-tight">
             My Vehicles
@@ -46,9 +46,8 @@ export default function VehiclesSection() {
             {VEHICLES_DATA.length} saved vehicles
           </span>
         </div>
-
-        <Button className="bg-orange-lg hover:bg-orange-lg/90 text-orange-2xl cursor-pointer rounded-lg px-4 font-semibold shadow-none">
-          <Plus className="mr-1.5 size-4" />
+        <Button className="bg-orange-lg hover:bg-orange-lg/90 text-orange-2xl cursor-pointer rounded-lg px-4 font-semibold shadow-none h-full">
+          <Plus className="mr-1.5 size-4 font-semibold" />
           Add Vehicle
         </Button>
       </div>
