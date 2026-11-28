@@ -53,16 +53,15 @@ export default function LoginIndex() {
 
         <div className="w-full max-w-95 mx-auto my-12 lg:my-0">
           <p className="text-xs font-bold tracking-[0.08em] uppercase text-amber-600 mb-3">
-            SMARTER COMMUTES. CLEARER NUMBERS.
+            Perjalanan Cerdas. Biaya Lebih Jelas.
           </p>
           <h1 className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-3.5">
-            Welcome to
+            <span className="text-nowrap">Selamat Datang di</span>
             <br />
             CommuteCount
           </h1>
           <p className="text-sm lg:text-base text-slate-500 leading-relaxed mb-8">
-            Predict your monthly fuel expenses with statistical precision and
-            Monte Carlo simulation.
+            Prediksi pengeluaran BBM bulanan Anda dengan presisi statistik dan simulasi Monte Carlo.
           </p>
 
           <Button
@@ -75,25 +74,25 @@ export default function LoginIndex() {
             {loading ? (
               <>
                 <Loader2 className="mr-2.5 h-4 w-4 animate-spin text-slate-500" />
-                Connecting to Google...
+                Menyambungkan dengan Google...
               </>
             ) : (
               <>
                 <GoogleIcon className="mr-3 h-4 w-4" />
-                Continue with Google
+                Lanjutkan dengan Google
               </>
             )}
           </Button>
 
           <p className="mt-4 text-xs text-slate-400">
-            Secure authentication powered by Google OAuth.
+            Autentikasi aman dengan Google OAuth.
           </p>
         </div>
 
         {/* footer */}
         <div className="flex items-center justify-between text-xs text-slate-400">
           <span>© 2026 CommuteCount</span>
-          <span>Built for the everyday journey.</span>
+          <span>Dirancang untuk perjalanan sehari-hari.</span>
         </div>
       </div>
 
@@ -112,29 +111,29 @@ export default function LoginIndex() {
 
         <div className="relative z-10 w-full max-w-120">
           <p className="text-xs font-bold tracking-[0.08em] uppercase text-amber-600 mb-3">
-            LESS GUESSWORK. MORE CONFIDENCE.
+            Kurangi Tebakan. Tambah Keyakinan.
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-3">
-            Your commute,
+            Perjalanan Anda,
             <br />
-            with the odds in your favor.
+            dengan kepastian lebih baik.
           </h2>
           <p className="text-base text-slate-500 mb-8">
-            Plan around uncertainty. Not just an average.
+            Rencanakan ketidakpastian. Bukan sekedar rata-rata.
           </p>
 
           <div className="relative pb-8">
             <div className="bg-white rounded-2xl border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6">
               <div className="flex items-center justify-between mb-1.5">
                 <span className="text-[10px] font-semibold tracking-wider uppercase text-slate-400">
-                  MONTHLY FUEL FORECAST
+                  Prediksi BBM Bulanan
                 </span>
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-700 border border-amber-200/60">
-                  5,000 simulations
+                  5,000 simulasi
                 </span>
               </div>
               <h3 className="text-base font-semibold text-slate-900 mb-6">
-                One month. 5,000 possible journeys.
+                Sebulan. 5,000 kemungkinan perjalanan.
               </h3>
               <div className="w-full">
                 <svg
@@ -218,9 +217,9 @@ export default function LoginIndex() {
 
                 {/* label */}
                 <div className="flex items-center justify-between text-[11px] mt-2 px-1">
-                  <span className="text-slate-400">Rp 245k</span>
-                  <span className="font-semibold text-slate-900">Rp 285k</span>
-                  <span className="text-slate-400">Rp 335k</span>
+                  <span className="text-slate-400">Rp 245.000</span>
+                  <span className="font-semibold text-slate-900">Rp 285.000</span>
+                  <span className="text-slate-400">Rp 335.000</span>
                 </div>
               </div>
             </div>
@@ -230,7 +229,7 @@ export default function LoginIndex() {
               <div className="w-1 h-9 rounded-full bg-amber-500 shrink-0" />
               <div>
                 <p className="text-[11px] text-slate-400 font-medium mb-0.5">
-                  95% Confidence Interval
+                  Interval Kepercayaan 95%
                 </p>
                 <p className="font-mono text-sm sm:text-base font-bold tracking-tight text-slate-900">
                   Rp 245.000 - Rp 335.000
@@ -240,7 +239,7 @@ export default function LoginIndex() {
           </div>
 
           <p className="text-xs text-slate-400 pl-4 mt-1">
-            Powered by probability. Grounded in your daily routine.
+            Berbasis probabilitas. Sesuai rutinitas harian Anda.
           </p>
         </div>
       </div>
