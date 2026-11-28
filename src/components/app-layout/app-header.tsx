@@ -66,7 +66,7 @@ export function AppHeader() {
           </div>
           <Button className="text-orange-2xl bg-orange-lg text-medium hover:bg-orange-lg/90 flex h-full cursor-pointer items-center justify-center gap-2 px-4 font-semibold">
             <Plus className="pb-0.5 font-semibold" />
-            <span>New Simulation</span>
+            <span>Simulasi Baru</span>
           </Button>
         </div>
       </div>

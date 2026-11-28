@@ -13,22 +13,22 @@ import {
 
 const items = [
   {
-    title: "Overview & Simulator",
+    title: "Ringkasan & Simulator",
     url: "/",
     icon: LayoutGrid,
   },
   {
-    title: "Routes & Vehicles",
+    title: "Rute & Kendaraan",
     url: "/vehicles",
     icon: Route,
   },
   {
-    title: "Daily Commute Log",
+    title: "Catatan Perjalanan",
     url: "/logs",
     icon: CalendarRange,
   },
   {
-    title: "Statistical Deep-Dive",
+    title: "Statistik Mendalam",
     url: "/statistical",
     icon: ChartColumn,
   }
