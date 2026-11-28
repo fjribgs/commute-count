@@ -42,17 +42,17 @@ const ROUTES_DATA: CommuteRoute[] = [
 export default function RoutesSection() {
   return (
     <section className="space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between h-10">
         <h2 className="text-orange-2xl text-lg font-semibold tracking-tight">
-          Saved Commute Routes
+          Rute Perjalanan Tersimpan
         </h2>
 
         <Button
           variant="outline"
-          className="text-orange-2xl cursor-pointer rounded-lg border-slate-200 bg-white px-4 font-medium shadow-none hover:bg-slate-50"
+          className="text-orange-2xl cursor-pointer rounded-lg border-slate-200 bg-white px-4 font-medium shadow-none hover:bg-slate-50 h-full"
         >
           <Plus className="mr-1.5 size-4" />
-          Add Route
+          Tambah Rute
         </Button>
       </div>
 
@@ -60,12 +60,12 @@ export default function RoutesSection() {
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-left">
             <thead>
-              <tr className="border-b border-slate-100 text-xs font-medium text-slate-400">
-                <th className="px-6 py-4 font-medium">Route Name</th>
-                <th className="px-6 py-4 font-medium">Round-trip Distance</th>
-                <th className="px-6 py-4 font-medium">Avg Traffic</th>
-                <th className="px-6 py-4 font-medium">Std Deviation</th>
-                <th className="px-6 py-4 font-medium">Status</th>
+              <tr className="border-b border-slate-100 text-xs md:text-sm font-medium text-slate-400">
+                <th className="px-6 py-4 font-medium">Nama Rute</th>
+                <th className="px-6 py-4 font-medium text-center">Jarak Pulang-Pergi (PP)</th>
+                <th className="px-6 py-4 font-medium text-center">Rata-Rata Macet</th>
+                <th className="px-6 py-4 font-medium text-center">Std Deviation</th>
+                <th className="px-6 py-4 font-medium text-center">Status</th>
                 <th className="w-12 px-6 py-4"></th>
               </tr>
             </thead>
@@ -83,30 +83,30 @@ export default function RoutesSection() {
                     <td className="text-orange-2xl px-6 py-4 font-medium">
                       {route.name}
                     </td>
-                    <td className="px-6 py-4 font-mono text-xs text-slate-700">
+                    <td className="px-6 py-4 font-mono text-sm text-slate-700 text-center">
                       {route.distance}
                     </td>
-                    <td className="px-6 py-4 font-mono text-xs text-slate-700">
+                    <td className="px-6 py-4 font-mono text-sm text-slate-700 text-center">
                       {route.avgTraffic}
                     </td>
-                    <td className="px-6 py-4 font-mono text-xs text-slate-700">
+                    <td className="px-6 py-4 font-mono text-sm text-slate-700 text-center">
                       {route.stdDeviation}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-6 py-4 flex items-center justify-center">
                       {isActive ? (
-                        <span className="bg-orange-sm text-orange-xl inline-flex items-center rounded-full px-3 py-1 text-xs font-medium">
-                          Active
+                        <span className="bg-orange-sm text-orange-xl inline-flex items-center rounded-full px-3 py-1 text-sm font-medium border border-orange-md">
+                          Aktif
                         </span>
                       ) : (
-                        <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">
-                          Saved
+                        <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-500">
+                          Tersimpan
                         </span>
                       )}
                     </td>
                     <td className="px-6 py-4 text-right">
                       <button
                         type="button"
-                        className="cursor-pointer rounded-md p-1 text-slate-400 hover:bg-slate-200/50 hover:text-slate-600"
+                        className="cursor-pointer rounded-md p-1 text-slate-600 hover:bg-slate-200/50 hover:text-slate-800"
                         aria-label={`Options for ${route.name}`}
                       >
                         <MoreHorizontal className="size-4" />

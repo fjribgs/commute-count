@@ -149,7 +149,7 @@ export const vehicles = sqliteTable(
     fuelType: d.text({ length: 50 }).notNull(), // misal: "Pertalite", "Pertamax"
     fuelPricePerLiter: d.integer({ mode: "number" }).notNull(), // misal: 10000 (Rp)
     idleFuelRateLiterPerMin: d.real().default(0.015).notNull(), // koefisien boros saat macet (beta_t)
-    isDefault: d.integer({ mode: "boolean" }).default(false).notNull(),
+    isActive: d.integer({ mode: "boolean" }).default(false).notNull(),
     createdAt: d
       .integer({ mode: "timestamp" })
       .default(sql`(unixepoch())`)
