@@ -18,7 +18,7 @@ export function AppHeader() {
   const { breadcrumbs } = useBreadcrumb();
 
   return (
-    <header className="sticky top-0 z-30 flex h-[8vh] items-center border-b border-zinc-200 bg-white px-4">
+    <header className="sticky top-0 z-30 flex h-[7vh] items-center border-b border-zinc-200 bg-white px-4">
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center justify-start">
           <SidebarTrigger className="cursor-pointer" />
@@ -56,17 +56,17 @@ export function AppHeader() {
             )}
           </div>
         </div>
-        <div className="flex h-[6vh] items-center gap-6">
-          <div className="bg-accent text-orange-2xl rounded-full border border-gray-400 px-6 py-4 font-medium hover:cursor-default">
+        <div className="flex h-[5vh] items-center gap-6">
+          <div className="bg-accent text-orange-2xl rounded-full border border-gray-400 flex justify-center items-center h-full px-6 py-4 font-medium hover:cursor-default gap-2">
             Honda Beat
             <span>
-              {` `}|{` `}
+              |
             </span>
             Kampus Route
           </div>
-          <Button className="group text-orange-2xl bg-orange-lg text-medium hover:bg-orange-lg flex h-full cursor-pointer items-center justify-center gap-2 px-4 hover:font-semibold">
-            <Plus className="pb-0.5 group-hover:font-semibold" />
-            <span>New Simulation</span>
+          <Button className="text-orange-2xl bg-orange-lg text-medium hover:bg-orange-lg/90 flex h-full cursor-pointer items-center justify-center gap-2 px-4 font-semibold">
+            <Plus className="pb-0.5 font-semibold" />
+            <span>Simulasi Baru</span>
           </Button>
         </div>
       </div>

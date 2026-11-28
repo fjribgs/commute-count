@@ -10,7 +10,7 @@ export default function VehiclesPage() {
       <PageBreadcrumb
         items={[
           {
-            title: "Routes & Vehicles",
+            title: "Rute & Kendaraan",
             href: "/vehicles",
           }
         ]}

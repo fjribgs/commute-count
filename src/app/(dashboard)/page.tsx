@@ -20,7 +20,7 @@ export default async function HomePage() {
       <PageBreadcrumb
         items={[
           {
-            title: "Overview & Simulator",
+            title: "Ringkasan & Simulator",
             href: "/",
           }
         ]}
